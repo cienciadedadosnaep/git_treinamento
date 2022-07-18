@@ -7,4 +7,9 @@ dados <- read.csv("C:/Users/robso/OneDrive/Documentos/R/ed_number_ssa/data/Quant
     sep = ";")
 # passo - 03: Escolas com numero de alunos menor que 75
 library("dplyr")
-dados %>% filter(QUANTIDADE < 75)
+escmenores <- dados %>% filter(QUANTIDADE < 75)
+
+escmaiores <- dados %>% filter(QUANTIDADE > 1000)
+
+escmenores
+escmaiores
